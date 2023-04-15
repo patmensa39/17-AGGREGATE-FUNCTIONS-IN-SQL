@@ -1,0 +1,19 @@
+/*17 AGGREGATE FUNCTIONS  IN SQL 
+Created by Patrick Mensah 
+Date Created: 04/11/2023
+Description:  This query shows how to use aggregate functions in SQL 
+*/
+
+--Assuming we want to find the all time global sales 
+
+SELECT 
+    SUM(Total) AS 'Total Sales', --this sums all the values in the total field or column
+    AVG(Total) AS 'Average Sales' ,--this returns average of the total column
+    MAX(Total) AS 'Highest Sales',--this returns the highest sales 
+    MIN(Total) AS 'Minimum Sales',--this returns the minmum sales 
+    COUNT(Total) AS 'Sales Count', --total, another way is below
+    COUNT(*) AS 'Sales Counts'
+FROM 
+    Invoice
+    
+    
